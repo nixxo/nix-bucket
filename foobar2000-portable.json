@@ -1,0 +1,38 @@
+{
+    "version": "1.6.2",
+    "description": "An advanced freeware audio player for the Windows platform.",
+    "homepage": "https://www.foobar2000.org/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.foobar2000.org/license"
+    },
+    "url": "https://www.videohelp.com/download/foobar2000_v1.6.2.exe#/dl.7z",
+    "hash": "7356acbdc15ec44ffa90403c202641c251c5928560fcd8a60b741d236a9a1564",
+    "bin": "foobar2000.exe",
+    "shortcuts": [
+        [
+            "foobar2000.exe",
+            "Foobar2000"
+        ]
+    ],
+    "persist": [
+        "profile"
+    ],
+    "installer": {
+        "script": [
+            "Remove-Item \"$dir\\`$*\", \"$dir\\uninstall.exe\" -Force -Recurse",
+            "New-Item \"$dir\\portable_mode_enabled\" -Force | Out-Null",
+            "if (Test-Path \"$env:Appdata\\foobar2000\") {",
+            "    Write-Host -F yellow \"Copying old '$env:Appdata\\foobar2000' to '$persist_dir'\"",
+            "    Copy-Item \"$env:Appdata\\foobar2000\\*\" \"$dir\\profile\" -Recurse -Force",
+            "}"
+        ]
+    },
+    "checkver": {
+        "url": "https://www.foobar2000.org/download",
+        "regex": "foobar2000_v([\\d.]+)\\."
+    },
+    "autoupdate": {
+        "url": "https://www.videohelp.com/download/foobar2000_v$version.exe#/dl.7z"
+    }
+}
