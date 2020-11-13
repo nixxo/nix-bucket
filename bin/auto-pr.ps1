@@ -1,4 +1,4 @@
-param([String]$upstream = "TheRandomLabs/Scoop-Bucket:master")
+param([String]$upstream = "nixxo/nixxo-scoop-bucket:main")
 
 if (!$env:SCOOP_HOME) { $env:SCOOP_HOME = Resolve-Path(Split-Path(Split-Path(scoop which scoop))) }
 $auto_pr = "$env:SCOOP_HOME\bin\auto-pr.ps1"
