@@ -7,3 +7,5 @@ scoop bucket for some apps
 
 - flux
 *added startup script* [https://github.com/lukesampson/scoop-extras/pull/4387]
+
+- xvi32
