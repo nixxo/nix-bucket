@@ -22,7 +22,7 @@
             "    \"`$wsShell.WorkingDirectory = '$current'\"",
             "    '$wsShell.Save()'",
             "    'Write-Host \"f.lux has been added to the startup programs.\"'",
-            "    'Write-Host \"Run `flux-remove-startup` to remove from startup.\"'",
+            "    'Write-Host \"Run flux-remove-startup to remove from startup.\"'",
             ")",
             "Set-Content \"$dir\\flux-add-startup.ps1\" -Value ($cont -join \"`r`n\") -Encoding Ascii",
             "Set-Content \"$dir\\flux-remove-startup.ps1\" -Value \"Remove-Item '$startup\\f.lux.lnk' -ErrorAction SilentlyContinue -Force\" -Encoding Ascii"
