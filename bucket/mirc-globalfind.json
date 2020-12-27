@@ -14,7 +14,7 @@
     "uninstaller": {
         "script": "Remove-Item \"$(appdir mirc-portable $global)\\current\\defaults\\GlobalFind\" -Recurse"
     },
-    "notes": "use \"/load GlobalFind/GlobalFind.mrc\" to load the script in mIRC.",
+    "notes": "use \"/load -rs GlobalFind/GlobalFind.mrc\" to load the script in mIRC.",
     "checkver": {
         "url": "https://xdccmule.org/index.php?page=download",
         "regex": ">Addon GlobalFind Extended v([\\d\\.]+) Multi-Network<"
