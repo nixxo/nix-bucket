@@ -9,3 +9,5 @@ scoop bucket for some apps
 *added startup script* [https://github.com/lukesampson/scoop-extras/pull/4387]
 
 - xvi32
+
+- transifex-client
