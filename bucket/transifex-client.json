@@ -6,7 +6,7 @@
         "identifier": "GPL 2.0",
         "url": "https://github.com/transifex/transifex-client/blob/master/LICENSE"
     },
-    "architecture" : {
+    "architecture": {
         "64bit": {
             "url": "https://github.com/transifex/transifex-client/releases/download/0.13.12/tx.py37-x64.exe",
             "hash": "sha1:68e6aaf3bbd8a3f04d9973473509a442586bdbe5",
