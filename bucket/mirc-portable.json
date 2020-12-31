@@ -34,6 +34,6 @@
         "regex": "mIRC v([\\d\\.]+)"
     },
     "autoupdate": {
-        "url": "https://www.mirc.com/downloads/mirc/32/mirc$cleanVersion.exe"
+        "url": "https://www.mirc.com/downloads/mirc/32/mirc$cleanVersion.exe#/dl.7z"
     }
 }

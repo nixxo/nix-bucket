@@ -1,26 +1,26 @@
 {
     "homepage": "https://github.com/transifex/transifex-client",
     "description": "The Transifex Command-line Tool enables you to manage your translations within a project without the need of an elaborate UI system.",
-    "version": "0.13.12",
+    "version": "0.14.2",
     "license": {
         "identifier": "GPL 2.0",
         "url": "https://github.com/transifex/transifex-client/blob/master/LICENSE"
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/transifex/transifex-client/releases/download/0.13.12/tx.py37-x64.exe",
-            "hash": "sha1:68e6aaf3bbd8a3f04d9973473509a442586bdbe5",
+            "url": "https://github.com/transifex/transifex-client/releases/download/0.14.2/tx_py37_64bit.exe",
+            "hash": "e11bb72d2643407aefd0c73042ffe7155b69a58f5e0e8d1199a1b73d5388a643",
             "bin": [
-                "tx.py37-x64.exe",
+                "tx.py37.x64.exe",
                 [
-                    "tx.py37-x64.exe",
+                    "tx.py37.x64.exe",
                     "tx"
                 ]
             ]
         },
         "32bit": {
-            "url": "https://github.com/transifex/transifex-client/releases/download/0.13.12/tx.py37.exe",
-            "hash": "sha1:98f589ac36f99cb495a0d169ec01897ba78c9713",
+            "url": "https://github.com/transifex/transifex-client/releases/download/0.14.2/tx_py37.exe",
+            "hash": "f8a22ecda7d5c4c150beddd24f7cf8ba65da84f36f1516ed8ead06a9c5fa0bbe",
             "bin": [
                 "tx.py37.exe",
                 [
@@ -30,17 +30,18 @@
             ]
         }
     },
+    "post_install": "Get-ChildItem \"$dir\\tx*.exe\" | Rename-Item -NewName { $_.Name -replace '[_-]','.' }",
     "checkver": {
-        "url": "https://github.com/transifex/transifex-client/releases",
-        "regex": "transifex-client/tree/([\\d\\.]+)\""
+        "url": "https://api.github.com/repos/transifex/transifex-client/releases/latest",
+        "regex": "download/([\\d\\.]+)/(?<exe>tx[_\\.-]?py37)(?<bit>[_\\.-]?(?<x>x64|64bit))\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/transifex/transifex-client/releases/download/$version/tx.py37-x64.exe"
+                "url": "https://github.com/transifex/transifex-client/releases/download/$version/$matchExe$matchBit.exe"
             },
             "32bit": {
-                "url": "https://github.com/transifex/transifex-client/releases/download/$version/tx.py37.exe"
+                "url": "https://github.com/transifex/transifex-client/releases/download/$version/$matchExe.exe"
             }
         }
     }
