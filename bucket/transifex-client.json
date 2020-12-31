@@ -1,0 +1,47 @@
+{
+    "homepage": "https://github.com/transifex/transifex-client",
+    "description": "The Transifex Command-line Tool enables you to manage your translations within a project without the need of an elaborate UI system.",
+    "version": "0.13.12",
+    "license": {
+        "identifier": "GPL 2.0",
+        "url": "https://github.com/transifex/transifex-client/blob/master/LICENSE"
+    },
+    "architecture" : {
+        "64bit": {
+            "url": "https://github.com/transifex/transifex-client/releases/download/0.13.12/tx.py37-x64.exe",
+            "hash": "sha1:68e6aaf3bbd8a3f04d9973473509a442586bdbe5",
+            "bin": [
+                "tx.py37-x64.exe",
+                [
+                    "tx.py37-x64.exe",
+                    "tx"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": "https://github.com/transifex/transifex-client/releases/download/0.13.12/tx.py37.exe",
+            "hash": "sha1:98f589ac36f99cb495a0d169ec01897ba78c9713",
+            "bin": [
+                "tx.py37.exe",
+                [
+                    "tx.py37.exe",
+                    "tx"
+                ]
+            ]
+        }
+    },
+    "checkver": {
+        "url": "https://github.com/transifex/transifex-client/releases",
+        "regex": "transifex-client/tree/([\\d\\.]+)\""
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/transifex/transifex-client/releases/download/$version/tx.py37-x64.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/transifex/transifex-client/releases/download/$version/tx.py37.exe"
+            }
+        }
+    }
+}
