@@ -15,9 +15,7 @@
             "Foobar2000"
         ]
     ],
-    "persist": [
-        "profile"
-    ],
+    "persist": "profile",
     "installer": {
         "script": [
             "Remove-Item \"$dir\\`$*\", \"$dir\\uninstall.exe\" -Force -Recurse",
