@@ -10,10 +10,13 @@
         "64bit": {
             "url": "https://github.com/transifex/transifex-client/releases/download/0.14.2/tx_py37_64bit.exe",
             "hash": "e11bb72d2643407aefd0c73042ffe7155b69a58f5e0e8d1199a1b73d5388a643",
+            "installer": {
+                "script": "Get-ChildItem \"$dir\\*exe\" | Rename-Item -NewName 'tx.py37-x64.exe'"
+            },
             "bin": [
-                "tx.py37.x64.exe",
+                "tx.py37-x64.exe",
                 [
-                    "tx.py37.x64.exe",
+                    "tx.py37-x64.exe",
                     "tx"
                 ]
             ]
@@ -21,6 +24,9 @@
         "32bit": {
             "url": "https://github.com/transifex/transifex-client/releases/download/0.14.2/tx_py37.exe",
             "hash": "f8a22ecda7d5c4c150beddd24f7cf8ba65da84f36f1516ed8ead06a9c5fa0bbe",
+            "installer": {
+                "script": "Get-ChildItem \"$dir\\*exe\" | Rename-Item -NewName 'tx.py37.exe'"
+            },
             "bin": [
                 "tx.py37.exe",
                 [
@@ -30,7 +36,6 @@
             ]
         }
     },
-    "post_install": "Get-ChildItem \"$dir\\tx*.exe\" | Rename-Item -NewName { $_.Name -replace '[_-]','.' }",
     "checkver": {
         "url": "https://api.github.com/repos/transifex/transifex-client/releases/latest",
         "regex": "download/([\\d\\.]+)/(?<exe>tx[_\\.-]?py37)(?<bit>[_\\.-]?(?<x>x64|64bit))\\.exe"
