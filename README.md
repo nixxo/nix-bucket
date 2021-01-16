@@ -8,6 +8,9 @@ scoop bucket for some apps
 - flux
 *added startup script* [https://github.com/lukesampson/scoop-extras/pull/4387]
 
-- xvi32
+- mirc portable + globalfind plugin
 
 - transifex-client
+
+- xvi32
+
