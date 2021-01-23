@@ -14,3 +14,6 @@ scoop bucket for some apps
 
 - xvi32
 
+- psubst
+
+- copy-handler
