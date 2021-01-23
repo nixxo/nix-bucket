@@ -1,0 +1,50 @@
+{
+    "version": "1.46",
+    "description": "the open source, free file copy utility that is: fast, highly customizable, and loaded with features.",
+    "homepage": "https://www.copyhandler.com/",
+    "license": "GPLv2",
+    "url": "https://sourceforge.net/projects/copyhandler/files/copyhandler/1.46/ch-portable-1.46.zip",
+    "hash": "cc119d21baa0fadcd9f27abeb4eb24fc88914cf595a13fc4e3a96142bc53cb98",
+    "installer": {
+        "script": [
+            "if ($architecture -eq '64bit') {",
+            "  Push-Location \"$dir\"",
+            "  Remove-Item '32bit' -Recurse",
+            "  movedir \"$dir\\64bit\" \"$dir\" | Out-Null",
+            "}",
+            "if ($architecture -eq '32bit') {",
+            "  Push-Location \"$dir\"",
+            "  Remove-Item '64bit' -Recurse",
+            "  movedir \"$dir\\32bit\" \"$dir\" | Out-Null",
+            "}"
+        ]
+    },
+    "architecture": {
+        "64bit": {
+            "bin": "ch64.exe",
+            "shortcuts": [
+                [
+                    "ch64.exe",
+                    "Copy Handler"
+                ]
+            ]
+        },
+        "32bit": {
+            "bin": "ch.exe",
+            "shortcuts": [
+                [
+                    "ch.exe",
+                    "Copy Handler"
+                ]
+            ]
+        }
+    },
+    "persist": "ch.xml",
+    "checkver": {
+        "url": "https://sourceforge.net/projects/copyhandler/rss?path=/copyhandler",
+        "regex": "ch-portable-([\\d.]+).zip"
+    },
+    "autoupdate": {
+        "url": "https://sourceforge.net/projects/copyhandler/files/copyhandler/$version/ch-portable-$version.zip"
+    }
+}
