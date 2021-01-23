@@ -12,9 +12,7 @@
         ]
     ],
     "persist": "UndertaleModTool.exe.config",
-    "checkver": {
-        "github": "https://github.com/krzys-h/UndertaleModTool"
-    },
+    "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/krzys-h/UndertaleModTool/releases/download/$version/UndertaleModTool-v$version.zip"
     }

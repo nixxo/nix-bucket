@@ -1,7 +1,7 @@
 {
-    "homepage": "https://www.mirc.com/",
-    "description": "mIRC is a full featured IRC client for Windows",
     "version": "7.64",
+    "description": "mIRC is a full featured IRC client for Windows",
+    "homepage": "https://www.mirc.com/",
     "license": {
         "identifier": "mIRC End User License Agreement",
         "url": "https://www.mirc.co.uk/eula.html"

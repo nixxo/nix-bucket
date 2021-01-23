@@ -1,7 +1,7 @@
 {
-    "homepage": "https://github.com/transifex/transifex-client",
-    "description": "The Transifex Command-line Tool enables you to manage your translations within a project without the need of an elaborate UI system.",
     "version": "0.14.2",
+    "description": "The Transifex Command-line Tool enables you to manage your translations within a project without the need of an elaborate UI system.",
+    "homepage": "https://github.com/transifex/transifex-client",
     "license": {
         "identifier": "GPL 2.0",
         "url": "https://github.com/transifex/transifex-client/blob/master/LICENSE"
