@@ -1,0 +1,69 @@
+{
+    "version": "4.5.0.1",
+    "description": "xplorer² is a desktop file manager combining the simplicity of windows explorer with the speed and efficiency of traditional dual pane orthodox file managers, helping you be productive with your documents, pictures, music, source code and other files.",
+    "homepage": "https://www.zabkat.com/",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "https://www.zabkat.com/x2lic.txt"
+    },
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\x2settings.ini\")) { New-Item \"$dir\\x2settings.ini\" | Out-Null }",
+            "if (!(Test-Path \"$persist_dir\\X2.LIC\")) { New-Item \"$dir\\X2.LIC\" | Out-Null }",
+            "Write-Host \"$dir\"",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall.exe.nsis\" -Force -Recurse",
+            "Get-ChildItem \"$dir\\x2t_*.dll\" -Exclude *ita* | Remove-Item"
+        ]
+    },
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://zabkat.com/dl/xplorer2_setup64_ult.exe#/dl.7z",
+                "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
+            ],
+            "hash": [
+                "6ca2776355b63e489cb24cae2c88fe52e393cce45be49db4ca1b6dd0104f51be",
+                "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
+            ],
+            "bin": "xplorer2_64.exe",
+            "shortcuts": [
+                [
+                    "xplorer2_64.exe",
+                    "xplorer2"
+                ]
+            ]
+        },
+        "32bit": {
+            "url": [
+                "https://zabkat.com/dl/xplorer2_setup_ult.exe#/dl.7z",
+                "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
+            ],
+            "hash": [
+                "e48bc3f45217aed5ec44c5943f489841dd38578ab51d5e3059b8fb4b38f77534",
+                "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
+            ],
+            "bin": "xplorer2.exe",
+            "shortcuts": [
+                [
+                    "xplorer2.exe",
+                    "xplorer2"
+                ]
+            ]
+        }
+    },
+    "persist": [
+        "x2settings.ini",
+        "X2.LIC"
+    ],
+    "checkver": "<b>Latest Release:</b>\\n*<br>v([\\d.]+)",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://zabkat.com/dl/xplorer2_setup64_ult.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://zabkat.com/dl/xplorer2_setup_ult.exe#/dl.7z"
+            }
+        }
+    }
+}
