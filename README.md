@@ -17,3 +17,5 @@ scoop bucket for some apps
 - psubst
 
 - copy-handler
+
+- manga-downloader
