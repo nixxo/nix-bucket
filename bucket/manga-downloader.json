@@ -1,0 +1,26 @@
+{
+    "version": "latest",
+    "description": "Manga Downloader is a very simple application written in JAVA to download any chapters of any manga from the supported websites.",
+    "homepage": "https://jdownloader.org",
+    "license": {
+        "identifier": "Proprietary",
+        "url": "http://redsquirrel87.altervista.org/doku.php/license"
+    },
+    "suggest": {
+        "JRE": "java/adopt8-hotspot-jre"
+    },
+    "url": [
+        "https://bitbucket.org/Red_Squirrel/manga-downloader/downloads/latest.jar#/MangaDownloader.jar",
+        "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/MangaDownloader.ico"
+    ],
+    "pre_install": "Set-Content \"$dir\\MangaDownloader.bat\" @('@echo off', 'start javaw.exe -jar MangaDownloader.jar') -Encoding Ascii",
+    "bin": "MangaDownloader.bat",
+    "shortcuts": [
+        [
+            "MangaDownloader.bat",
+            "MangaDownloader",
+            "",
+            "MangaDownloader.ico"
+        ]
+    ]
+}
