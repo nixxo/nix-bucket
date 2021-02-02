@@ -5,22 +5,9 @@
     "license": "GPLv2",
     "url": "https://sourceforge.net/projects/copyhandler/files/copyhandler/1.46/ch-portable-1.46.zip",
     "hash": "cc119d21baa0fadcd9f27abeb4eb24fc88914cf595a13fc4e3a96142bc53cb98",
-    "installer": {
-        "script": [
-            "if ($architecture -eq '64bit') {",
-            "  Push-Location \"$dir\"",
-            "  Remove-Item '32bit' -Recurse",
-            "  movedir \"$dir\\64bit\" \"$dir\" | Out-Null",
-            "}",
-            "if ($architecture -eq '32bit') {",
-            "  Push-Location \"$dir\"",
-            "  Remove-Item '64bit' -Recurse",
-            "  movedir \"$dir\\32bit\" \"$dir\" | Out-Null",
-            "}"
-        ]
-    },
     "architecture": {
         "64bit": {
+            "extract_dir": "64bit",
             "bin": "ch64.exe",
             "shortcuts": [
                 [
@@ -30,6 +17,7 @@
             ]
         },
         "32bit": {
+            "extract_dir": "32bit",
             "bin": "ch.exe",
             "shortcuts": [
                 [
