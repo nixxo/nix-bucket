@@ -5,19 +5,17 @@
     "license": "GPL-2.0-or-later",
     "notes": [
         "Install npcap manually from the 'wireshark' directory.",
-        "$dir\\npcap-1.10.exe
-",
+        "$dir\\npcap-1.10.exe",
         "Install USBPcap manually from the 'wireshark' directory.",
-        "$dir\\USBPcapSetup-1.5.4.0.exe
-"
+        "$dir\\USBPcapSetup-1.5.4.0.exe"
     ],
     "architecture": {
         "64bit": {
-            "url": "https://1.eu.dl.wireshark.org/win64/Wireshark-win64-3.4.3.exe#/dl.7z",
+            "url": "https://1.eu.dl.wireshark.org/win64/all-versions/Wireshark-win64-3.4.3.exe#/dl.7z",
             "hash": "3bb02427d9c29d7fc04bf011f2e4ebd4f23ebe68f275f51d4ae36ee167b6cb03"
         },
         "32bit": {
-            "url": "https://1.eu.dl.wireshark.org/win32/Wireshark-win32-3.4.3.exe#/dl.7z",
+            "url": "https://1.eu.dl.wireshark.org/win32/all-versions/Wireshark-win32-3.4.3.exe#/dl.7z",
             "hash": "6f99517f1e3c35be1de40ab9d333e6b3f053a60b7622798b171fef9e0da33c95"
         }
     },
@@ -52,14 +50,14 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://1.eu.dl.wireshark.org/win64/Wireshark-win64-$version.exe#/dl.7z",
+                "url": "https://1.eu.dl.wireshark.org/win64/all-versions/Wireshark-win64-$version.exe#/dl.7z",
                 "hash": {
                     "url": "https://www.wireshark.org/download/SIGNATURES-$version.txt",
                     "regex": "SHA256\\($basename\\)=$sha256"
                 }
             },
             "32bit": {
-                "url": "https://1.eu.dl.wireshark.org/win64/Wireshark-win32-$version.exe#/dl.7z",
+                "url": "https://1.eu.dl.wireshark.org/win32/all-versions/Wireshark-win32-$version.exe#/dl.7z",
                 "hash": {
                     "url": "https://www.wireshark.org/download/SIGNATURES-$version.txt",
                     "regex": "SHA256\\($basename\\)=$sha256"
