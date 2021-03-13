@@ -1,5 +1,5 @@
 {
-    "version": "4.5.0.1",
+    "version": "5.0.0.0",
     "description": "xplorer² is a desktop file manager combining the simplicity of windows explorer with the speed and efficiency of traditional dual pane orthodox file managers, helping you be productive with your documents, pictures, music, source code and other files.",
     "homepage": "https://www.zabkat.com/",
     "license": {
@@ -22,7 +22,7 @@
                 "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
             ],
             "hash": [
-                "6ca2776355b63e489cb24cae2c88fe52e393cce45be49db4ca1b6dd0104f51be",
+                "209afec48bd0f643d6753ba62601aff45d232f3084fe0b0bcd3b2a788c3d7f20",
                 "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
             ],
             "bin": "xplorer2_64.exe",
@@ -39,7 +39,7 @@
                 "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
             ],
             "hash": [
-                "e48bc3f45217aed5ec44c5943f489841dd38578ab51d5e3059b8fb4b38f77534",
+                "b8970a73ced9bab31471548453216d17b085213e9187e6bc9570679d3aad49d6",
                 "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
             ],
             "bin": "xplorer2.exe",
