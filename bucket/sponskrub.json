@@ -1,0 +1,21 @@
+{
+    "version": "2021.01.24",
+    "description": "Strip advertisements from downloaded YouTube videos ",
+    "homepage": "https://github.com/yt-dlp/SponSkrub",
+    "license": "GPLv3",
+    "url": [
+        "https://github.com/yt-dlp/SponSkrub/releases/download/2021.01.24/sponskrub.exe",
+        "https://github.com/yt-dlp/SponSkrub/releases/download/2021.01.24/libcurl.dll"
+    ],
+    "hash": [
+        "75874da0674a9c88ff59216801f05e4e12b0711a6f040492dc42d0643d3930d1",
+        "90a3c003abed24e547e5ea187d8fcfab8bf2afe4c05324e312dfa895e7293e38",
+    ],
+    "bin": "sponskrub.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "url": [
+            "https://github.com/yt-dlp/SponSkrub/releases/download/$version/sponskrub.exe"
+        ]
+    }
+}
