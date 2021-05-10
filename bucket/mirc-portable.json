@@ -1,5 +1,5 @@
 {
-    "version": "7.64",
+    "version": "7.65",
     "description": "mIRC is a full featured IRC client for Windows",
     "homepage": "https://www.mirc.com/",
     "license": {
@@ -8,12 +8,12 @@
     },
     "depends": "xdelta",
     "url": [
-        "https://www.mirc.com/downloads/mirc/32/mirc764.exe#/dl.7z",
-        "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/mirc764.xdelta"
+        "https://www.mirc.com/get.php#/dl.7z",
+        "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/mirc765.xdelta"
     ],
     "hash": [
-        "abbb23f101884d3f423ee1ca734755761f21d75890efed17668533ad4912448c",
-        "72c844af179dda487cba736f8bbd9e0d890ec9ff5a39aa48780a2572dd5e677c"
+        "f662cd6ba9bb03fc73649a0fa7df771bf5ff183dec9f17607b85436ef40d2a31",
+        "9dcae1be0eb38e22445ab3f994ba1893acf03077ea82063dfc249b4bb25daf76"
     ],
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$_16_\", \"$dir\\uninstall.exe\" -Force -Recurse",
@@ -34,6 +34,6 @@
         "regex": "mIRC v([\\d\\.]+)"
     },
     "autoupdate": {
-        "url": "https://www.mirc.com/downloads/mirc/32/mirc$cleanVersion.exe#/dl.7z"
+        "url": "https://www.mirc.com/get.php#/dl.7z"
     }
 }
