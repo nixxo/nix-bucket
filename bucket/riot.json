@@ -1,0 +1,28 @@
+{
+    "version": "1.0.1",
+    "description": "A free program designed to efficiently optimize images for the Web",
+    "homepage": "https://riot-optimizer.com/",
+    "license": {
+        "identifier": "Donationware"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/Riot-1.0.1-portable-x86_64.7z",
+            "hash": "ebc42c6ad6770700fb0eff4e760d5c2c3ce171cff2308290c0ca06cb384b4b41"
+        },
+        "32bit": {
+            "url": "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/Riot-1.0.1-portable-x86_32.7z",
+            "hash": "4457c50367385cc5642f2f69e2f63653dd432db478699909b960b3ee056b0e24"
+        }
+    },
+    "shortcuts": [
+        [
+            "Riot.exe",
+            "Riot"
+        ]
+    ],
+    "checkver": {
+        "url": "https://riot-optimizer.com/download/",
+        "regex": "Latest version: <strong>([\\d\\.]+)</strong>"
+    }
+}
