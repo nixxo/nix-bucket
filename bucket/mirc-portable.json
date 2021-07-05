@@ -1,5 +1,5 @@
 {
-    "version": "7.65",
+    "version": "7.66",
     "description": "mIRC is a full featured IRC client for Windows",
     "homepage": "https://www.mirc.com/",
     "license": {
@@ -9,10 +9,10 @@
     "depends": "xdelta",
     "url": [
         "https://www.mirc.com/get.php#/dl.7z",
-        "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/mirc765.xdelta"
+        "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/mirc766.xdelta"
     ],
     "hash": [
-        "cc2c74da138dafeb3e6eb48706dd607ddaf01a5767fceeb7b1b6f5f67d606d55",
+        "fece57fd23db422dcd4c5f6972549b5a5acf5a20b69bd44ee63f043f4864dcfb",
         "9dcae1be0eb38e22445ab3f994ba1893acf03077ea82063dfc249b4bb25daf76"
     ],
     "post_install": [
