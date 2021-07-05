@@ -1,5 +1,5 @@
 {
-    "version": "0.14.2",
+    "version": "0.14.3",
     "description": "The Transifex Command-line Tool enables you to manage your translations within a project without the need of an elaborate UI system.",
     "homepage": "https://github.com/transifex/transifex-client",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/transifex/transifex-client/releases/download/0.14.2/tx_py37_64bit.exe",
-            "hash": "e11bb72d2643407aefd0c73042ffe7155b69a58f5e0e8d1199a1b73d5388a643",
+            "url": "https://github.com/transifex/transifex-client/releases/download/0.14.3/tx.py37-x64.exe",
+            "hash": "e3d57673ffdf939e3491d15cc0108f2cd7c480d3497e9ac87cc8fbe780b277d1",
             "installer": {
                 "script": "Get-ChildItem \"$dir\\*exe\" | Rename-Item -NewName 'tx.py37-x64.exe'"
             },
@@ -22,8 +22,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/transifex/transifex-client/releases/download/0.14.2/tx_py37.exe",
-            "hash": "f8a22ecda7d5c4c150beddd24f7cf8ba65da84f36f1516ed8ead06a9c5fa0bbe",
+            "url": "https://github.com/transifex/transifex-client/releases/download/0.14.3/tx.py37.exe",
+            "hash": "11d150500c0596612755b232d626c819645d10126d559d61ab7f9dcff6d5df7e",
             "installer": {
                 "script": "Get-ChildItem \"$dir\\*exe\" | Rename-Item -NewName 'tx.py37.exe'"
             },
