@@ -13,7 +13,7 @@
     ],
     "hash": [
         "fece57fd23db422dcd4c5f6972549b5a5acf5a20b69bd44ee63f043f4864dcfb",
-        "9dcae1be0eb38e22445ab3f994ba1893acf03077ea82063dfc249b4bb25daf76"
+        "79ae5cfa52deb292d1324e25c2556128b797fa6cf1bbf76531998444f0508e1f"
     ],
     "post_install": [
         "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$_16_\", \"$dir\\uninstall.exe\" -Force -Recurse",
