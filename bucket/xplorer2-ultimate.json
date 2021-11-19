@@ -1,5 +1,5 @@
 {
-    "version": "5.0.0.3",
+    "version": "5.1.0.1",
     "description": "xplorer² is a desktop file manager combining the simplicity of windows explorer with the speed and efficiency of traditional dual pane orthodox file managers, helping you be productive with your documents, pictures, music, source code and other files.",
     "homepage": "https://www.zabkat.com/",
     "license": {
@@ -18,11 +18,11 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://zabkat.com/dl/xplorer2_setup64_ult.exe#/dl.7z",
+                "https://www.zabkat.com/download.php?p=3&u=1#/zabkat.com.7z",
                 "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
             ],
             "hash": [
-                "6a3138ade9092e276a5f7e9ac2ae90f2fd115ef2dc3b6d94f310b86a92ff24a6",
+                "eac7a02542665b362ea0c07c28e0d394a7de71f8af102ed82b609b7f1867a9db",
                 "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
             ],
             "bin": "xplorer2_64.exe",
@@ -35,11 +35,11 @@
         },
         "32bit": {
             "url": [
-                "https://zabkat.com/dl/xplorer2_setup_ult.exe#/dl.7z",
+                "https://www.zabkat.com/download.php?p=1&u=1#/zabkat.com.7z",
                 "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
             ],
             "hash": [
-                "6e1a9db4c2dc001571ffe06927dcdbee3d389a52187a8dc48ccd3bdd3c441fbd",
+                "678a5b778b9cd12e23abb5c2649f053dd0ded63efcb7154cee1fe2448829ad50",
                 "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
             ],
             "bin": "xplorer2.exe",
@@ -59,10 +59,10 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://zabkat.com/dl/xplorer2_setup64_ult.exe#/dl.7z"
+                "url": "https://www.zabkat.com/download.php?p=3&u=1#/zabkat.com.7z"
             },
             "32bit": {
-                "url": "https://zabkat.com/dl/xplorer2_setup_ult.exe#/dl.7z"
+                "url": "https://www.zabkat.com/download.php?p=1&u=1#/zabkat.com.7z"
             }
         }
     }
