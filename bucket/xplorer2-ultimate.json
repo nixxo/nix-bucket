@@ -1,5 +1,5 @@
 {
-    "version": "5.1.0.1",
+    "version": "5.1.0.3",
     "description": "xplorer² is a desktop file manager combining the simplicity of windows explorer with the speed and efficiency of traditional dual pane orthodox file managers, helping you be productive with your documents, pictures, music, source code and other files.",
     "homepage": "https://www.zabkat.com/",
     "license": {
@@ -11,7 +11,7 @@
             "if (!(Test-Path \"$persist_dir\\x2settings.ini\")) { New-Item \"$dir\\x2settings.ini\" | Out-Null }",
             "if (!(Test-Path \"$persist_dir\\X2.LIC\")) { New-Item \"$dir\\X2.LIC\" | Out-Null }",
             "Write-Host \"$dir\"",
-            "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\Uninstall.exe.nsis\" -Force -Recurse",
+            "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse",
             "Get-ChildItem \"$dir\\x2t_*.dll\" -Exclude *ita* | Remove-Item"
         ]
     },
@@ -22,7 +22,7 @@
                 "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
             ],
             "hash": [
-                "eac7a02542665b362ea0c07c28e0d394a7de71f8af102ed82b609b7f1867a9db",
+                "ecefd37155d073bafc399909b3b13e85f2dcd40d4735c57ee09c6bbf723698c2",
                 "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
             ],
             "bin": "xplorer2_64.exe",
@@ -39,7 +39,7 @@
                 "https://github.com/nixxo/nixxo-scoop-bucket/raw/main/extras/xplorer2_msimg32.zip"
             ],
             "hash": [
-                "678a5b778b9cd12e23abb5c2649f053dd0ded63efcb7154cee1fe2448829ad50",
+                "7488fe4da65785ad088ea99d783ca772f58448b32361350311ad380d4ac3478d",
                 "7bf75c5d97172ae88079b16a951d186d0bff718c87b6afbc642271ea4e455bcc"
             ],
             "bin": "xplorer2.exe",
