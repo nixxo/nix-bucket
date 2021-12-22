@@ -7,9 +7,6 @@ scoop bucket for some apps
 - flux (https://justgetflux.com/)
 *added startup script* [https://github.com/lukesampson/scoop-extras/pull/4387]
 
-- foobar2000-portable (https://www.foobar2000.org)
-*using the "profile" folder introduced in 1.6 as persist*
-
 - manga-downloader (http://redsquirrel87.altervista.org/doku.php/manga-downloader)
 
 - mirc portable + globalfind plugin (https://www.mirc.com + https://xdccmule.org/)
