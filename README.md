@@ -22,9 +22,6 @@ scoop bucket for some apps
 
 - transifex-client (https://github.com/transifex/transifex-client)
 
-- wireshark (https://www.wireshark.org/)
-*using portable settings instead PortableApps pkgs* [https://github.com/lukesampson/scoop-extras/pull/5624]
-
 - xplorer2 (https://www.zabkat.com/)
 
 - xvi32 (http://www.chmaas.handshake.de/delphi/freeware/xvi32/xvi32.htm)
